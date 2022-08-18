@@ -1,0 +1,88 @@
+body,
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.flexItToTheBottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.imgContainer {
+  /*   min-height: 30%; */
+  width: 50%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+.text h1 {
+  letter-spacing: 2px;
+}
+
+footer {
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+footer a {
+  color: rgba(95, 176, 241, 0.9);
+}
+
+.text .whatsappText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1rem;
+}
+/* WHATSAPP LOGO */
+#whatsappLogo {
+  transition: 0.2s;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+#whatsappLogo:hover {
+  transform: scale(1.005);
+}
+#whatsappLogo.show {
+  right: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .imgContainer {
+    width: 80%;
+  }
+  .text .whatsappText {
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+}
